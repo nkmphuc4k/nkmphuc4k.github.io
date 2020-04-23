@@ -1,0 +1,50 @@
+.footer {
+    background-color: $bgBlack;
+    height: 100%;
+    width: 100%;
+
+    &__coppy {
+        height: 100px;
+        line-height: 100px;
+        &-txt {
+            font-size: 2.5rem;
+            color: $white;
+            strong {
+                color: $primary;
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        &-list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        &-fb,
+        &-tw,
+        &-ins,
+        &-ytb {
+            display: flex;
+            margin: 0 20px;
+            background-color: $white;
+            height: 42px;
+            width: 42px;
+            border-radius: 9999px;
+        }
+        &-tw {
+            background-color: $primary;
+        }
+        &-icon {
+            margin: auto;
+            font-size: 2.5rem;
+            color: $textColor;
+        }
+        &--active {
+            color: $white;
+        }
+    }
+}

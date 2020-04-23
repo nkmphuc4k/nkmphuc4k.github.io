@@ -1,0 +1,76 @@
+.portfolio {
+    &__heading {
+        @extend .services__heading;
+        &-title {
+            @extend .services__heading-title;
+        }
+    }
+    &__tabs {
+        &-list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        &-item {
+            position: relative;
+            padding: 0 22px;
+            font-size: 1.5rem;
+            color: $textColor;
+            font-weight: 500;
+            &:not(:nth-of-type(5)):after {
+                position: absolute;
+                content: "";
+                height: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                border-right: 1px solid #999;
+            }
+            &--active {
+                color: $primary;
+                font-weight: 600;
+            }
+        }
+    }
+    &__gallery {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding: 45px 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 2vw;
+        // grid-auto-rows: dense;
+        &-avt {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            // overflow: hidden;
+            &:first-child {
+                grid-row-start: span 3;
+            }
+            &:nth-of-type(6) {
+                grid-row-start: span 3;
+            }
+            &:nth-of-type(7) {
+                grid-column-start: span 2;
+            }
+            &:nth-of-type(12) {
+                grid-column-start: span 2;
+            }
+            &-img {
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(0.5) grayscale(1);
+                transition: 0.3s ease-in-out;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19);
+                border-radius: 2px;
+            }
+            &:hover &-img {
+                filter: brightness(1) grayscale(0);
+            }
+        }
+    }
+}

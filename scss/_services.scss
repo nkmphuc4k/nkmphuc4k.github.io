@@ -1,0 +1,95 @@
+.services {
+    width: 100%;
+    height: 100%;
+    &__heading {
+        margin: 120px 0 55px;
+        display: flex;
+        justify-content: center;
+
+        &-title {
+            position: relative;
+            font-size: 3.5rem;
+            color: $textColor;
+            font-weight: 700;
+            &:before {
+                position: absolute;
+                content: "";
+                width: 45px;
+                height: 1px;
+                background-color: $primary;
+                bottom: -5px;
+                left: 5px;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                width: 45px;
+                height: 1px;
+                background-color: $primary;
+                bottom: -8px;
+                left: 15px;
+            }
+        }
+    }
+    // Services-skill
+    &__skill {
+        text-align: right;
+
+        &-heading {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: $textColor;
+        }
+        &-list {
+            list-style: none;
+        }
+        &-item:not(:nth-child(1)) {
+            margin: 55px 0;
+        }
+        &-title {
+            font-size: 2rem;
+            font-weight: 500;
+            color: $textServices;
+            margin-bottom: 18px;
+        }
+        &-local {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $textColor;
+        }
+        &-desc {
+            margin-top: 25px;
+            font-size: 1.4rem;
+            color: $textColor;
+        }
+    }
+    &__avt {
+        margin-top: 150px;
+        padding: 0 32px;
+        max-width: 375px;
+        &-img {
+            width: 100%;
+        }
+    }
+    // Services-product
+    &__product {
+        &-heading {
+            @extend .services__skill-heading;
+        }
+        &-list {
+            list-style: none;
+        }
+        &-item:not(:nth-child(1)) {
+            margin: 55px 0;
+        }
+        &-title {
+            @extend .services__skill-title;
+        }
+        &-local {
+            @extend .services__skill-local;
+        }
+        &-desc {
+            @extend .services__skill-desc;
+        }
+    }
+}

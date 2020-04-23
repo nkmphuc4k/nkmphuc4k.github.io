@@ -1,0 +1,260 @@
+@media screen and(max-width: 1023px) {
+    .nav {
+        &-item {
+            margin: 0 10px;
+        }
+        &-link {
+            font-size: 1.4rem;
+        }
+    }
+    .header {
+        &__logo {
+            margin-left: 26px;
+        }
+    }
+    .portfolio {
+        &__gallery {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            &-avt {
+                &:first-child {
+                    grid-row-start: span 2;
+                }
+                &:nth-of-type(6) {
+                    grid-row-start: span 2;
+                }
+                &:nth-of-type(7) {
+                    grid-column-start: span 2;
+                }
+                &:nth-of-type(12) {
+                    grid-column-start: auto;
+                }
+            }
+            &--res {
+                object-fit: fill;
+            }
+        }
+    }
+}
+@media screen and(max-width: 992px) {
+    .blog {
+        &__item {
+            &-txt {
+                font-size: 1.8rem;
+            }
+            &-line {
+                &-admin {
+                    &-desc {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .contacts {
+        &__containers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__info {
+            &-avt {
+                margin-bottom: 20px;
+            }
+            &-item {
+                &-wrap {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            &-content {
+                text-align: center;
+                &-title {
+                    font-size: 3rem;
+                }
+                &-desc {
+                    &-one,
+                    &-two {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 768px) {
+    .nav {
+        &-item {
+            margin: 0 5px;
+        }
+        &-link {
+            font-size: 1.4rem;
+        }
+    }
+    .header {
+        &__hide {
+            display: none;
+        }
+    }
+    .services {
+        &__skill,
+        &__product {
+            text-align: left;
+            padding: 0 26px;
+        }
+        &__avt {
+            margin: 40px 0;
+            padding: 0 26px;
+        }
+    }
+    .teams {
+        &__item {
+            padding: 0 26px;
+        }
+    }
+    .blog {
+        &__item {
+            &-txt {
+                font-size: 2rem;
+            }
+            &-line {
+                &-admin {
+                    &-desc {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .contacts {
+        &__content {
+            margin: 100px 26px;
+            &-heading {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &-group {
+                width: 100%;
+                &:nth-of-type(2) {
+                    margin-top: 40px;
+                }
+                &:last-child {
+                    margin-right: 16px;
+                }
+            }
+            &-textarea {
+                width: 100%;
+            }
+        }
+    }
+
+    .portfolio {
+        &__tabs {
+            &-item {
+                font-size: 1.1rem;
+            }
+        }
+        &__gallery {
+            margin-top: 40px;
+            padding: 0 26px;
+            display: grid;
+            grid-template-columns: auto auto;
+            &-avt {
+                &:first-child {
+                    grid-row-start: auto;
+                }
+                &:nth-of-type(6) {
+                    grid-row-start: auto;
+                }
+                &:nth-of-type(7) {
+                    grid-column-start: auto;
+                }
+                &:nth-of-type(12) {
+                    grid-column-start: auto;
+                }
+                &-img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .footer {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+@media screen and(max-width: 578px) {
+    .nav {
+        &-item {
+            margin: 10px 20px;
+            &:nth-child(1) {
+                margin-top: 25px;
+            }
+        }
+        &-link {
+            font-size: 1.8rem;
+        }
+    }
+    .portfolio {
+        &__gallery {
+            display: block;
+            &-avt {
+                margin: 20px 0;
+                &-img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &__tabs {
+            &-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                list-style: none;
+                text-align: left;
+            }
+            &-item {
+                display: block;
+                position: relative;
+                padding: 8px 22px;
+                font-size: 1.8rem;
+                color: $textColor;
+                font-weight: 500;
+                transition: color ease-in 0.2s;
+                &:not(:nth-of-type(5)):after {
+                    display: none;
+                }
+                &--active {
+                    color: $primary;
+                    font-weight: 600;
+                }
+                &:hover {
+                    color: $primary;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .intro {
+        &__mouse {
+            margin-bottom: 60px;
+        }
+    }
+    .footer {
+        &__socials {
+            &-fb,
+            &-tw,
+            &-ins,
+            &-ytb {
+                margin: 0 10px;
+            }
+        }
+    }
+}

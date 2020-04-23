@@ -1,0 +1,96 @@
+.blog {
+    &__heading {
+        @extend .services__heading;
+        &-title {
+            @extend .services__heading-title;
+        }
+    }
+    &__item {
+        position: relative;
+        margin: 20px 0;
+        width: 100%;
+
+        &-avt {
+            position: relative;
+            width: 100%;
+            height: 355px;
+            text-align: center;
+            &-img {
+                max-width: 100%;
+                height: 100%;
+                // object-fit: fill;
+            }
+            // &:before {
+            //     position: absolute;
+            //     content: "";
+            //     border: 1px solid #ccc;
+            //     // max-width: calc(100% -30px);
+            //     height: 120px;
+            //     top: 30px;
+            //     left: 30px;
+            //     right: 30px;
+            // }
+        }
+        &-wrap {
+            position: absolute;
+            border: 1px solid #ccc;
+            height: 150px;
+            left: 30px;
+            width: calc(100% - 60px);
+            top: calc(100% - 228px);
+            border-radius: 3px;
+        }
+        &-line {
+            position: absolute;
+            border: 1px solid #ccc;
+            min-height: 120px;
+            left: 30px;
+            min-width: calc(100% - 60px);
+            top: 30px;
+            border-radius: 3px;
+            &--ad {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                min-height: 120px;
+                left: 30px;
+                min-width: calc(100% - 60px);
+            }
+
+            &-admin {
+                display: flex;
+                padding: 24px 24px 0;
+                list-style: none;
+
+                &-note {
+                    margin-left: 20px;
+                }
+                &-icon {
+                    font-size: 1.5rem;
+                    color: $primary2;
+                    margin-right: 3px;
+                }
+                &-number,
+                &-txt {
+                    font-size: 1.5rem;
+                    color: $white;
+                    font-weight: 600;
+                }
+                &-desc {
+                    padding: 10px 24px 0;
+                    font-size: 1.4rem;
+                    color: $white;
+                }
+            }
+        }
+
+        &-txt {
+            position: absolute;
+            font-size: 3rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $primary;
+        }
+    }
+}

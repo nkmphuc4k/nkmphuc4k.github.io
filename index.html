@@ -3,10 +3,513 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
     <title>ProFile</title>
   </head>
   <body>
-    <h1>ProFile</h1>
+   <div class="wrapper">
+    <header class="header">
+      <nav class="navbar navbar-expand-sm navbar-white bg-white fixed-top ">
+        <div class="container">
+          <a class="header__logo" href="#">
+            <img src="./images/logo.png" alt="" class="header__logo-img">
+          </a>
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="navbar-fas fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav m-auto bg-white">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Giới thiệu <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kinh nghiệm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thông tin liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bình luận</a>
+              </li>
+              
+          </div>
+        </div>
+        <div class="header__hide">
+          <span class="header__hide-author">Hoang Phuc</span>
+        </div>
+      </nav>
+    </header>
+<!-- Intro -->
+    <div class="intro">
+     
+     <div class="intro__wrap">
+      <div class="intro__avt">
+        <img src="./images/avt.png" alt="" class="intro__avt-img">
+      </div>
+      <h2 class="intro__title">I'M HOANG PHUC</h2>
+      <div class="intro__desc">
+        <span class="intro__desc-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, ratione voluptatibus. Eligendi soluta maxime quas qui fugit obcaecati nobis? Nulla perspiciatis dolore error commodi repudiandae, odit doloremque saepe necessitatibus quia.</span>
+      </div>
+      <button class="intro__btn">HIRE ME</button>
+     </div>
+     <span class="intro__mouse" id="mouse-down">
+      <i class="intro__mouse-icon fas fa-mouse"></i>
+     </span>
+    </div>
+<!-- Services -->
+<div class="services" id="services-id">
+  <div class="services__heading">
+    <h2 class="services__heading-title">SERVICES</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="services__skill">
+          <h3 class="services__skill-heading">
+            WHAT <strong>I DO</strong>
+          </h3>
+          <ul class="services__skill-list">
+            <li class="services__skill-item">
+              <h4 class="services__skill-title">Style Guide</h4>
+              <span class="services__skill-local">Name of University USA</span>
+              <p class="services__skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iusto ipsa consequuntur fuga inventore corporis quo aliquam excepturi nostrum quos.</p>
+            </li>
+            <li class="services__skill-item">
+              <h4 class="services__skill-title">Style Guide</h4>
+              <span class="services__skill-local">Name of University USA</span>
+              <p class="services__skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iusto ipsa consequuntur fuga inventore corporis quo aliquam excepturi nostrum quos.</p>
+            </li>
+            <li class="services__skill-item">
+              <h4 class="services__skill-title">Style Guide</h4>
+              <span class="services__skill-local">Name of University USA</span>
+              <p class="services__skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iusto ipsa consequuntur fuga inventore corporis quo aliquam excepturi nostrum quos.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="services__avt">
+          <img src="./images/user.png" alt="" class="services__avt-img">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="services__product">
+          <h3 class="services__product-heading">
+            WHAT I DO 
+          </h3>
+          <ul class="services__product-list">
+            <li class="services__product-item">
+              <h4 class="services__product-title">Style Guide</h4>
+              <span class="services__product-local">Name of University USA</span>
+              <p class="services__product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iusto ipsa consequuntur fuga inventore corporis quo aliquam excepturi nostrum quos.</p>
+            </li>
+            <li class="services__product-item">
+              <h4 class="services__product-title">Style Guide</h4>
+              <span class="services__product-local">Name of University USA</span>
+              <p class="services__product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iusto ipsa consequuntur fuga inventore corporis quo aliquam excepturi nostrum quos.</p>
+            </li>
+            <li class="services__product-item">
+              <h4 class="services__product-title">Style Guide</h4>
+              <span class="services__product-local">Name of University USA</span>
+              <p class="services__product-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iusto ipsa consequuntur fuga inventore corporis quo aliquam excepturi nostrum quos.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio -->
+<div class="portfolio">
+  <div class="portfolio__heading">
+    <h2 class="portfolio__heading-title">PORTFOLIO</h2>
+  </div>
+  <div class="container">
+    <div class="portfolio__tabs">
+      <ul class="portfolio__tabs-list">
+        <li class="portfolio__tabs-item portfolio__tabs-item--active">
+          All
+        </li>
+        <li class="portfolio__tabs-item">
+         Logo Design
+        </li>
+        <li class="portfolio__tabs-item">
+          Wordpress
+        </li>
+        <li class="portfolio__tabs-item">
+          Creative Design
+        </li>
+        <li class="portfolio__tabs-item">
+         Development
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+  <div class="portfolio__gallery">
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga1.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga2.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga3.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga4.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga5.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga6.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga7.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga8.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga9.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga10.png" alt="" class="portfolio__gallery-avt-img portfolio__gallery--res ">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga11.png" alt="" class="portfolio__gallery-avt-img portfolio__gallery--res ">
+    </div>
+    <div class="portfolio__gallery-avt">
+      <img src="./images/ga12.png" alt="" class="portfolio__gallery-avt-img">
+    </div>
+  </div>
+</div>
+<!-- Teams -->
+<div class="teams">
+  <div class="teams__heading">
+    <h2 class="teams__heading-title">TEAMS</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="teams__item">
+          <div class="teams__avt">
+            <img src="./images/team1.png" alt="" class="teams__avt-img">
+          </div>
+          <div class="teams__content">
+            <h4 class="teams__content-title">Minh Phuc</h4>
+            <span class="teams__content-position">Founder CoderX</span>
+            <span class="teams__content-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id tenetur soluta ex dolor, sint illo repellendus debitis veritatis! Itaque, a.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="teams__item">
+          <div class="teams__avt">
+            <img src="./images/team2.png" alt="" class="teams__avt-img">
+          </div>
+          <div class="teams__content">
+            <h4 class="teams__content-title">Minh Phuc</h4>
+            <span class="teams__content-position">Founder CoderX</span>
+            <span class="teams__content-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id tenetur soluta ex dolor, sint illo repellendus debitis veritatis! Itaque, a.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="teams__item">
+          <div class="teams__avt">
+            <img src="./images/team1.png" alt="" class="teams__avt-img">
+          </div>
+          <div class="teams__content">
+            <h4 class="teams__content-title">Minh Phuc</h4>
+            <span class="teams__content-position">Founder CoderX</span>
+            <span class="teams__content-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id tenetur soluta ex dolor, sint illo repellendus debitis veritatis! Itaque, a.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="teams__item">
+          <div class="teams__avt">
+            <img src="./images/team2.png" alt="" class="teams__avt-img">
+          </div>
+          <div class="teams__content">
+            <h4 class="teams__content-title">Minh Phuc</h4>
+            <span class="teams__content-position">Founder CoderX</span>
+            <span class="teams__content-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id tenetur soluta ex dolor, sint illo repellendus debitis veritatis! Itaque, a.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="teams__end">
+    <span class="teams__end-line"></span>
+  </div>
+</div>
+<!--  -->
+
+<!-- So thong ke -->
+<div class="numbers">
+  <div class="container numbers__containers">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="numbers__item">
+          <div class="numbers__item-avt">
+            <i class="numbers__item-icon fas fa-user-shield"></i>
+          </div>
+          <h2 class="numbers__item-number">540</h2>
+          <span class="numbers__item-text">Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="numbers__item">
+          <div class="numbers__item-avt">
+            <i class="numbers__item-icon fas fa-pencil-alt"></i>
+          </div>
+          <h2 class="numbers__item-number">750</h2>
+          <span class="numbers__item-text">Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="numbers__item">
+          <div class="numbers__item-avt">
+            <i class="numbers__item-icon fas fa-coffee"></i>
+          </div>
+          <h2 class="numbers__item-number">1230</h2>
+          <span class="numbers__item-text">Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="numbers__item">
+          <div class="numbers__item-avt">
+            <i class="numbers__item-icon fas fa-trophy"></i>
+          </div>
+          <h2 class="numbers__item-number">980</h2>
+          <span class="numbers__item-text">Lorem ipsum dolor sit amet.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Blog -->
+<div class="blog">
+  <div class="blog__heading">
+    <h2 class="blog__heading-title">BLOG</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="blog__item">
+          <div class="blog__item-avt">
+            <img src="./images/blog1.jpg" alt="" class="blog__item-avt-img">
+          </div>
+          <div class="blog__item-line">
+            <span class="blog__item-txt">THẢ TYM NÈ</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="blog__item">
+          <div class="blog__item-avt">
+            <img src="./images/blog2.jpg" alt="" class="blog__item-avt-img">
+          </div>
+          <div class="blog__item-line--ad">
+            <span class="blog__item-txt">THẢ TYM NÈ</span>
+          </div>
+          <div class="blog__item-wrap">
+
+            <ul class="blog__item-line-admin">
+              <li class="blog__item-line-admin-date">
+                <i class="blog__item-line-admin-icon fas fa-calendar-alt"></i>
+                <span class="blog__item-line-admin-number">23/04/2020</span>
+              </li>
+              <li class="blog__item-line-admin-note">
+                <i class="blog__item-line-admin-icon fas fa-bookmark"></i>
+                <span class="blog__item-line-admin-txt">Admin</span>
+              </li>
+            </ul>
+            <div class="blog__item-line-admin-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, recusandae quisquam a aut nesciunt numquam alias itaque porro sunt repudiandae!</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="blog__item">
+          <div class="blog__item-avt">
+            <img src="./images/blog3.jpg" alt="" class="blog__item-avt-img">
+          </div>
+          <div class="blog__item-line">
+            <span class="blog__item-txt">ANH YÊU EM !!</span>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="blog__item">
+          <div class="blog__item-avt">
+            <img src="./images/blog4.jpg" alt="" class="blog__item-avt-img">
+          </div>
+          <div class="blog__item-line">
+            <span class="blog__item-txt">ANH YÊU EM !!</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="partner">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="partner__item">
+          <img src="./images/partner1.png" alt="" class="partner__item-img">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="partner__item">
+          <img src="./images/partner2.png" alt="" class="partner__item-img">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="partner__item">
+          <img src="./images/partner3.png" alt="" class="partner__item-img">
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="partner__item">
+          <img src="./images/partner4.png" alt="" class="partner__item-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contacts">
+  <div class="container contacts__containers">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+        <div class="contacts__content">
+          <div class="contacts__content-heading">
+            <div class="contacts__content-group">
+              <input type="text" class="contacts__content-input" placeholder="Name">
+            </div>
+            <div class="contacts__content-group">
+              <input type="email" class="contacts__content-input" placeholder="Email">
+            </div>
+          </div>
+          <div class="contacts__content-mess">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="contacts__content-textarea"></textarea>
+          </div>
+          <button class="contacts__content-btn">CONTACT US</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+        <div class="contacts__info">
+          <ul class="contacts__info-list">
+            <li class="contacts__info-item">
+           <div class="contacts__info-item-wrap">
+            <div class="contacts__info-avt">
+              <i class="contacts__info-icon fas fa-envelope"></i>
+            </div>
+            <div class="contacts__info-content">
+              <h4 class="contacts__info-content-title">Email</h4>
+              <p class="contacts__info-content-desc">
+                <span class="contacts__info-content-desc-one">info@gmail.com</span>
+                <span class="contacts__info-content-desc-two">info@gmail.com</span>
+              </p>
+            </div>
+           </div>
+            </li>
+            <li class="contacts__info-item">
+              <div class="contacts__info-item-wrap">
+              <div class="contacts__info-avt">
+                <i class="contacts__info-icon fas fa-phone-alt"></i>
+              </div>
+              <div class="contacts__info-content">
+                <h4 class="contacts__info-content-title">Address</h4>
+                <p class="contacts__info-content-desc">
+                  <span class="contacts__info-content-desc-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eaque!</span>
+                  <span class="contacts__info-content-desc-two">info@gmail.com</span>
+                </p>
+              </div>
+              </div>
+            </li>
+            <li class="contacts__info-item">
+              <div class="contacts__info-item-wrap">
+              <div class="contacts__info-avt">
+                <i class="contacts__info-icon fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contacts__info-content">
+                <h4 class="contacts__info-content-title">Phone</h4>
+                <p class="contacts__info-content-desc">
+                  <span class="contacts__info-content-desc-one">info@gmail.com</span>
+                  <span class="contacts__info-content-desc-two">info@gmail.com</span>
+                </p>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="footer__coppy">
+          <span class="footer__coppy-txt">@Minh Phuc <strong>2020</strong></span>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="footer__socials">
+          <ul class="footer__socials-list">
+            <li class="footer__socials-fb">
+              <i class="footer__socials-icon fab fa-facebook-f"></i>
+            </li>
+            <li class="footer__socials-tw">
+              <i class="footer__socials-icon footer__socials--active fab fa-twitter"></i>
+            </li>
+            <li class="footer__socials-ins">
+              <i class="footer__socials-icon fab fa-instagram"></i>
+            </li>
+            <li class="footer__socials-ytb">
+              <i class="footer__socials-icon fab fa-youtube"></i>
+            </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   </div>
   </body>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </html>

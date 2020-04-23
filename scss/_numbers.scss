@@ -1,0 +1,40 @@
+.numbers {
+    margin-top: 50px;
+    background-color: $primary2;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__containers {
+        text-align: center;
+    }
+    &__item {
+        padding: 20px 0;
+        &-avt {
+            margin: 0 auto;
+            display: flex;
+            width: 102px;
+            height: 102px;
+            background-color: $white;
+            border-radius: 9999px;
+        }
+        &-icon {
+            font-size: 3rem;
+            color: $primary;
+            margin: auto;
+        }
+        &-number {
+            font-size: 3rem;
+            color: $white;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        &-text {
+            font-size: 1.6rem;
+            color: $white;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
