@@ -8,15 +8,15 @@
     &__item {
         position: relative;
         margin: 20px 0;
-        width: 100%;
 
         &-avt {
             position: relative;
-            width: 100%;
+            width: auto;
+            max-width: 100%;
             height: 355px;
             text-align: center;
             &-img {
-                max-width: 100%;
+                width: 100%;
                 height: 100%;
                 // object-fit: fill;
             }
@@ -36,7 +36,7 @@
             border: 1px solid #ccc;
             height: 150px;
             left: 30px;
-            width: calc(100% - 60px);
+            right: 30px;
             top: calc(100% - 228px);
             border-radius: 3px;
         }
@@ -45,7 +45,7 @@
             border: 1px solid #ccc;
             min-height: 120px;
             left: 30px;
-            min-width: calc(100% - 60px);
+            right: 30px;
             top: 30px;
             border-radius: 3px;
             &--ad {
@@ -53,8 +53,7 @@
                 top: 30px;
                 left: 30px;
                 min-height: 120px;
-                left: 30px;
-                min-width: calc(100% - 60px);
+                right: 30px;
             }
 
             &-admin {

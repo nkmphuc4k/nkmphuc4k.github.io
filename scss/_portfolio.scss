@@ -39,8 +39,8 @@
         margin: auto;
         padding: 45px 0;
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        grid-gap: 2vw;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
         // grid-auto-rows: dense;
         &-avt {
             position: relative;
@@ -48,16 +48,16 @@
             width: 100%;
             // overflow: hidden;
             &:first-child {
-                grid-row-start: span 3;
+                grid-row: span 3;
             }
             &:nth-of-type(6) {
-                grid-row-start: span 3;
+                grid-row: span 3;
             }
             &:nth-of-type(7) {
-                grid-column-start: span 2;
+                grid-column: span 2;
             }
             &:nth-of-type(12) {
-                grid-column-start: span 2;
+                grid-column: span 2;
             }
             &-img {
                 max-width: 100%;
